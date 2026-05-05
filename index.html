@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Massa</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1>Bella Massa</h1>
+        <p class="subtitle">A pizza caseira mais saborosa da cidade, feita com ingredientes frescos e massa artesanal.</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Pedir</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>Sobre Nós</h2>
+            <p>
+Aqui na Bella Massa, nós acreditamos que uma verdadeira pizza não é apenas uma refeição rápida, mas uma experiência artesanal que abraça a alma. <br>
+A Bella Massa é uma pizzaria familiar com tradição de 30 anos, especializada em pizzas artesanais e massas caseiras. Nossa paixão é criar sabores autênticos e inesquecíveis, utilizando ingredientes frescos e de alta qualidade. Cada pizza é feita com amor e dedicação, garantindo uma explosão de sabor a cada mordida. Venha nos visitar e descubra o verdadeiro sabor da Itália em cada fatia!
+</p>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="pizza-grid">
+                <article class="pizza-card">
+                    <img src="Assets/Marguerita.jpg" alt="Pizza Margherita">
+                    <div class="pizza-info">
+                        <h3>Pizza Margherita</h3>
+                        <p>Molho de tomate fresco, mussarela e manjericão.</p>
+                        <span>R$ 35,00</span>
+                    </div>
+                </article>
+                <article class="pizza-card">
+                    <img src="Assets/Pepperoni.jpg" alt="Pizza Pepperoni">
+                    <div class="pizza-info">
+                        <h3>Pizza Pepperoni</h3>
+                        <p>Generosas fatias de pepperoni e queijo extra.</p>
+                        <span>R$ 40,00</span>
+                    </div>
+                </article>
+                <article class="pizza-card">
+                    <img src="Assets/Vegana.jpg" alt="Pizza Vegetariana">
+                    <div class="pizza-info">
+                        <h3>Pizza Vegetariana</h3>
+                        <p>Legumes grelhados, tomate e queijo especial.</p>
+                        <span>R$ 38,00</span>
+                    </div>
+                </article>
+                <article class="pizza-card">
+                    <img src="Assets/Queijo.jpg" alt="Pizza de Queijo">
+                    <div class="pizza-info">
+                        <h3>Pizza de Queijo</h3>
+                        <p>Muito queijo derretido com massa crocante.</p>
+                        <span>R$ 33,00</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="order">
+            <h2>Faça seu pedido</h2>
+            <div class="order-grid">
+                <div class="order-card">
+                    <p>Escolha sua pizza favorita:</p>
+                    <select id="pizza-select" aria-label="Selecione a pizza">
+                        <option value="Margherita" data-price="35">Margherita - R$ 35,00</option>
+                        <option value="Pepperoni" data-price="40">Pepperoni - R$ 40,00</option>
+                        <option value="Vegetariana" data-price="38">Vegetariana - R$ 38,00</option>
+                        <option value="Queijo" data-price="33">Queijo - R$ 33,00</option>
+                    </select>
+                    <div class="order-form-group">
+                        <label for="quantity">Quantidade</label>
+                        <input id="quantity" type="number" min="1" value="1">
+                    </div>
+                    <div class="order-form-group">
+                        <label for="customer-name">Seu nome</label>
+                        <input id="customer-name" type="text" placeholder="Nome" required>
+                    </div>
+                    <div class="order-form-group">
+                        <label for="customer-address">Endereço</label>
+                        <input id="customer-address" type="text" placeholder="Rua, número, bairro" required>
+                    </div>
+                    <button id="order-button" type="button">Adicionar pedido</button>
+                </div>
+                <div class="order-card order-summary" aria-live="polite">
+                    <h3>Resumo do pedido</h3>
+                    <p id="order-message">Selecione a pizza, a quantidade e insira seus dados.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-contact">
+            <h2>Contato</h2>
+            <ul>
+                <li><span class="contact-icon">📞</span>Telefone: <a href="tel:+551112345678">(11) 1234-5678</a></li>
+                <li><span class="contact-icon">💬</span>WhatsApp: <a href="https://wa.me/551112345678" target="_blank" rel="noreferrer">(11) 91234-5678</a></li>
+                <li><span class="contact-icon">✉️</span>Email: <a href="mailto:contato@bellamassa.com.br">contato@bellamassa.com.br</a></li>
+                <li><span class="contact-icon">📸</span>Instagram: <a href="https://github.com/JuIsabelle" target="_blank" rel="noreferrer">@BellaMassa</a></li>
+                <li><span class="contact-icon">📍</span>Endereço: Rua das Pizzas, 123 - Centro, São Paulo</li>
+            </ul>
+        </div>
+        <p>© 2024 Bella Massa. Todos os direitos reservados.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
